@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _02.Password
 {
@@ -9,10 +9,14 @@ namespace _02.Password
             string username = Console.ReadLine();
             string password = Console.ReadLine();
 
-            while (password != "pass")
+            string input = Console.ReadLine();
+
+            while (input != password)
             {
-                password = Console.ReadLine();
+                input = Console.ReadLine();
             }
+
+            Console.WriteLine("Welcome {0}!", username);
         }
     }
 }
